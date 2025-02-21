@@ -36,7 +36,7 @@ After acquiring the datasets you need to download the Sample lists that is prese
 
 The analysis involves several key steps:
 
-1. **filtering the sample ID's**: To keep the first column and deleting the remaining
+1. **Filtering the sample IDs**: To keep the first column and deleting the remaining
   ```bash
    cut -f1 igsr-ceu.tsv.tsv > CEU_samples.txt
    ```
