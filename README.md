@@ -30,7 +30,7 @@ The datasets utilized in this project are sourced from the [International Genome
 - **YRI**: [Yoruba in Ibadan, Nigeria](https://www.internationalgenome.org/data-portal/population/YRI)
 - **CEU**: [Utah residents (CEPH) with Northern and Western European ancestry](https://www.internationalgenome.org/data-portal/population/CEU)
 
-After acquiring the datasets you need to download the Sample lists that is present in the respective dataset port which is in the format of `.tsv.tsv` file  (mainly used for filtration)
+After acquiring the datasets you need to download the Sample lists that is present in the respective dataset portal which is in the format of `.tsv.tsv` file  (mainly used for filtration)
 
 ## Data Processing Workflow
 
