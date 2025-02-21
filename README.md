@@ -19,9 +19,29 @@ To replicate or build upon this analysis:
    ```
 ### Install Dependencies:
 
-Ensure that `bcftools` and `tabix` are installed on your system. Installation instructions is provide below.
+Ensure that `bcftools` and `tabix` are installed on your system.
 
+You can install 'bcftools' and 'tabix' on your system using the following methods, depending on your operating system:
 
+**For Ubuntu/Linux (Debian-based)**
+   ```bash
+   sudo apt update
+   sudo apt install bcftools tabix
+   ```
+**For macOS (using Homebrew)**
+   ```bash
+   brew install bcftools htslib
+   ```
+**For Conda Users (Linux/macOS/Windows)***
+If you're using Anaconda or Miniconda:
+   ```bash
+   conda install -c bioconda bcftools tabix
+   ```
+**For Windows (Using WSL or Conda)**
+
+ If using Windows Subsystem for Linux (WSL), follow the Ubuntu/Linux instructions above.
+ 
+ If using Conda, use the Conda installation method.
 
 ## Data Sources
 
