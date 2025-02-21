@@ -13,8 +13,8 @@ To replicate or build upon this analysis:
 ### Clone the Repository:
 
    ```bash
-     git clone https://github.com/Karthik-GigaByte/Advanced-EDA-for-Genomic-Data-Analysis-Identifying-Genetic-Variations-Through-Visualization.git
-     cd Advanced-EDA-for-Genomic-Data-Analysis-Identifying-Genetic-Variations-Through-Visualization.
+     git clone https://github.com/Karthik-GigaByte/Advanced-EDA-for-Genomic-Data-Analysis.git
+     cd Advanced-EDA-for-Genomic-Data-Analysis.
 
    ```
 ### Install Dependencies:
