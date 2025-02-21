@@ -30,11 +30,18 @@ The datasets utilized in this project are sourced from the [International Genome
 - **YRI**: [Yoruba in Ibadan, Nigeria](https://www.internationalgenome.org/data-portal/population/YRI)
 - **CEU**: [Utah residents (CEPH) with Northern and Western European ancestry](https://www.internationalgenome.org/data-portal/population/CEU)
 
+After acquiring the datasets you need to download the Sample lists that is present in the respective dataset port which is in the format of `.tsv.tsv` file  (mainly used for filtration)
+
 ## Data Processing Workflow
 
 The analysis involves several key steps:
 
-1. **Data Acquisition**: Download genotype data for chromosome 22 for both YRI and CEU populations.
+1. **filtering the sample ID's**: To keep the first column and deleting the remaining
+  ```bash
+   cut -f1 igsr-ceu.tsv.tsv > CEU_samples.txt
+   ```
+
+2. **Data Acquisition**: Download genotype data for chromosome 22 for both YRI and CEU populations.
 
    ```bash
    # Download VCF file
@@ -43,7 +50,7 @@ The analysis involves several key steps:
    # Download corresponding index file
    sudo curl -O ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr22.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz.tbi
    ```
-2. **Sample Filtering**: Extract and retain only the samples corresponding to YRI and CEU populations.
+3. **Sample Filtering**: Extract and retain only the samples corresponding to YRI and CEU populations.
 
    ```bash
    # List all samples in the VCF
@@ -58,9 +65,9 @@ The analysis involves several key steps:
    # Index the new VCF file
    tabix CEU_chr22.vcf.gz
    ```
-   Repeat the above steps for YRI samples.
+   Repeat the same steps for YRI samples.
 
-3. **Statistical Analysis**: Perform statistical analyses to identify and compare genetic variations.
+4. **Statistical Analysis**: Perform statistical analyses to identify and compare genetic variations.
    ```bash
    # Generate statistics for CEU
    bcftools stats CEU_chr22.vcf.gz > CEU_stats.txt
