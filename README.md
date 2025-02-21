@@ -1,6 +1,6 @@
 # Advanced-EDA-for-Genomic-Data-Analysis-Identifying-Genetic-Variations-Through-Visualization.
 
-![Project Banner]([path_to_your_image.png](https://github.com/Karthik-GigaByte/Image/blob/main/d.jpeg))
+![Project Banner](path_to_your_image.png](https://github.com/Karthik-GigaByte/Image/blob/main/d.jpeg)
 
 ## Overview
 
