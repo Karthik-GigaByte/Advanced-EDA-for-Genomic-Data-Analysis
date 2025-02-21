@@ -87,7 +87,7 @@ The project encompasses the following analyses:
 
 ## Data Availability
 
-All datasets and results generated during this project are available in this repository under the `data/` and `results/` directories, respectively.
+All filtered datasets and results generated during this project are available in this repository under the `data/` and `results/` directories, respectively.
 
 ## Contributing
 
